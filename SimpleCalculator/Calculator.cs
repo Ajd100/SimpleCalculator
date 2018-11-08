@@ -21,6 +21,12 @@ namespace SimpleCalculator
                 case "/":
                     result = firstNum / secondNum;
                     break;
+                case "^":
+                    result = Math.Pow(firstNum, secondNum);
+                    break;
+                case "%":
+                    result = firstNum % secondNum;
+                    break;
                 default:
                     throw new NotSupportedException("Specified operation is not supported");
             }
